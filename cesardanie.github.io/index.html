@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Interactivo - Mi Nombre</nobreak></title>
+  <!-- Enlace a estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- AOS animaciones (opcional) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Sección: Cabecera / Hero -->
+  <header class="hero" id="home">
+    <div class="container">
+      <img src="assets/img/foto-perfil.jpg" alt="Mi foto" class="avatar" data-aos="fade-down">
+      <h1 data-aos="fade-up">Hola, soy Mi Nombre</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Desarrollador Frontend / Backend / Fullstack</p>
+      <a href="#sobre-mi" class="btn" data-aos="fade-up" data-aos-delay="200">Conóceme</a>
+    </div>
+  </header>
+
+  <!-- Sección: Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container" data-aos="fade-right">
+      <h2>Sobre mí</h2>
+      <p>Breve presentación profesional, intereses y objetivos.</p>
+    </div>
+  </section>
+
+  <!-- Sección: Experiencia -->
+  <section id="experiencia" class="section">
+    <div class="container" data-aos="fade-left">
+      <h2>Experiencia</h2>
+      <ul class="timeline">
+        <li data-aos="fade-up">
+          <h3>Empresa A</h3>
+          <span class="period">Ene 2023 - Presente</span>
+          <p>Descripción de tareas y logros.</p>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <h3>Empresa B</h3>
+          <span class="period">Jun 2021 - Dic 2022</span>
+          <p>Descripción de tareas y logros.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección: Proyectos -->
+  <section id="proyectos" class="section">
+    <div class="container" data-aos="fade-right">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <img src="assets/img/proyecto1.png" alt="Proyecto 1">
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve.</p>
+          <a href="https://github.com/tu-usuario/proyecto1" target="_blank">Ver en GitHub</a>
+        </div>
+        <!-- Repite tarjetas según necesites -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Habilidades -->
+  <section id="habilidades" class="section">
+    <div class="container" data-aos="fade-left">
+      <h2>Habilidades</h2>
+      <canvas id="chartSkills" width="400" height="200"></canvas>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Contacto</h2>
+      <p>Correo: <a href="mailto:tu.email@example.com">tu.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">Mi LinkedIn</a></p>
+      <!-- Formulario simple (puede requerir backend o servicio de terceros) -->
+      <!-- <form action="" method="POST">...</form> -->
+    </div>
+  </section>
+
+  <!-- Enlaces a scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+</body>
+</html>
